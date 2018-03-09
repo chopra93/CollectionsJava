@@ -1,5 +1,3 @@
-import org.apache.commons.collections.list.TreeList;
-
 import java.util.*;
 
 /**
@@ -340,6 +338,89 @@ public class Temp {
 
     void mapTemp(){
 
+        // hash map
+        Map<Integer,String> mp = new HashMap<>();
+        mp.put(5, "A");
+        mp.put(11, "C");
+        mp.put(4, "Z");
+        mp.put(77, "Y");
+        mp.put(9, "P");
+        mp.put(66, "Q");
+        mp.put(0, "R");
+        mp.put(2,"chopra");
+        mp.put(1,"amit");
+        mp.put(3,"amit");
+        mp.put(10,"amit");
+        mp.put(7,"amit");
+        mp.put(6,"amit");
+
+        for (Map.Entry<Integer,String> entry: mp.entrySet()){
+            System.out.println(entry.getKey() + " - "+entry.getValue());
+        }
+
+        Map<String,Integer> map = new HashMap<>();
+        map.put("Jayant", 80);
+        map.put("Abhishek", 90);
+        map.put("Anushka", 80);
+        map.put("Amit", 75);
+        map.put("Danish", 40);
+
+        for (Map.Entry<String,Integer> entry: map.entrySet()){
+            System.out.println(entry.getKey() + " - "+entry.getValue());
+        }
+
+        // linked Hash Map
+
+        Map<Integer,String> mp1 = new LinkedHashMap<>();
+        mp1.put(2,"chopra");
+        mp1.put(1,"amit");
+        mp1.put(3,"amit");
+        mp1.put(10,"amit");
+        mp1.put(9,"amit");
+        mp1.put(7,"amit");
+        mp1.put(6,"amit");
+
+        for (Map.Entry<Integer,String> entry: mp1.entrySet()){
+            System.out.println(entry.getKey() + " - "+entry.getValue());
+        }
+
+        Map<String,Integer> map1 = new LinkedHashMap<>();
+        map1.put("Jayant", 80);
+        map1.put("Abhishek", 90);
+        map1.put("Anushka", 80);
+        map1.put("Amit", 75);
+        map1.put("Danish", 40);
+
+        for (Map.Entry<String,Integer> entry: map1.entrySet()){
+            System.out.println(entry.getKey() + " - "+entry.getValue());
+        }
+
+        // TreeHash Map
+
+        Map<Integer,String> mp2 = new TreeMap<>();
+        mp2.put(2,"chopra");
+        mp2.put(1,"amit");
+        mp2.put(3,"amit");
+        mp2.put(10,"amit");
+        mp2.put(9,"amit");
+        mp2.put(7,"amit");
+        mp2.put(6,"amit");
+
+        for (Map.Entry<Integer,String> entry: mp2.entrySet()){
+            System.out.println(entry.getKey() + " - "+entry.getValue());
+        }
+
+        Map<String,Integer> map2 = new TreeMap<>();
+        map2.put("Jayant", 80);
+        map2.put("Abhishek", 90);
+        map2.put("Anushka", 80);
+        map2.put("Amit", 75);
+        map2.put("Danish", 40);
+
+        for (Map.Entry<String,Integer> entry: map2.entrySet()){
+            System.out.println(entry.getKey() + " - "+entry.getValue());
+        }
+
     }
 
 
@@ -352,7 +433,8 @@ public class Temp {
 //        t.stackTemp();
 //        t.dequeueTemp();
 //        t.queueTemp();
-        t.setTemp();
+//        t.setTemp();
+        t.mapTemp();
     }
 }
 
